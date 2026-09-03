@@ -20,7 +20,7 @@ public class App {
         System.out.print("Umur : " + umur);
 
         // 3. Third atau ketiga terakhir jga bisa printf untuk mencetak format khusus 
-        System.out.printf("%nTinggi : %.of cm%n" + tinggi);
+        System.out.printf("%nTinggi : %.of cm%n" tinggi);
 
 
     }
