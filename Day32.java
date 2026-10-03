@@ -14,7 +14,7 @@ public class Day32 {
     //hasi awalnya false tapi setelah di tambah (!) hasilnya jadi true
     System.out.println(!(A <= 19 || 50 >= A && A == 77));    
     
-     //hasilnya true
+     //hasilnya false
     System.out.println(A == 20 && A > 2 );              
 
     }
