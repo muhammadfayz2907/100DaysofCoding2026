@@ -6,16 +6,16 @@ public class Day32 {
     // Mengkombinasikan operator perbandingan dan logika
 
     //hasilnya false
-    System.out.println(A <= 45 || 11 >= A && A == 7);     
+    System.out.println(A <= 19 || 50 >= A && A == 77);     
     
     //hasilnya true
-    System.out.println(A < 11 || A >= 67);                  
+    System.out.println(A < 100 || A >= 67);                  
 
     //hasi awalnya false tapi setelah di tambah (!) hasilnya jadi true
-    System.out.println(!(A <= 45 || 11 >= A && A == 7));    
+    System.out.println(!(A <= 19 || 50 >= A && A == 77));    
     
      //hasilnya true
-    System.out.println(A == 26 && A > 20 );              
+    System.out.println(A == 20 && A > 2 );              
 
     }
 }
