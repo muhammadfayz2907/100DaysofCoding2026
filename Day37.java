@@ -5,25 +5,31 @@ public class Day37 {
         Scanner input = new Scanner(System.in);
 
         int nilai = input.nextInt();
-//Masukkan angka sesuai yang sesuai dari soal
+        String code;
+//Masukan satu angka sesuai yang sesuai dari soal
         if (nilai == 0) {
-            System.out.println("N");
-        } else if (nilai == 4) {
-            System.out.println("A");
-        } else if (nilai == 102) {
-            System.out.println("A+");
-        } else if (nilai == 7) {
-            System.out.println("B");
-        } else if (nilai == 101) {
-            System.out.println("B+");
-        } else if (nilai == -8) {
-            System.out.println("C");
-        } else if (nilai == -102) {
-            System.out.println("C-");
-        } else if (nilai == -9) {
-            System.out.println("D");
-        } else if (nilai == -101) {
-            System.out.println("D-");
+            code = "N";
+        } else if (nilai > 0) {
+            if (nilai % 2 == 0) {
+                code = "A";
+            } else { 
+                code = "B";
+            }
+            
+            if (nilai > 100) {
+                code = code + "+";
+            }
+        }    
+        else {
+            if (nilai % 2 == 0) {
+                code = "C";
+            } else {
+                code = "D";
+            }
+            if (nilai < -100) {
+                code = code + "-";
+            }
         }
+        System.out.println(code);       
     }
- }
+}
