@@ -13,7 +13,7 @@ public class Day38 {
       System.out.println("MINUMAN                    HARGA");
       System.out.println("5.Matcha\t\t\t\t Rp.15.000\n6.Pop Ice\t\t\t\t Rp.5.000");
       System.out.println("");
-      System.out.println("Masukkan angka sesuai Menu nya:");
+      System.out.print("Masukkan angka sesuai Menu nya:");
       int a = input.nextInt();
       System.out.println("");
       int hrga = 0;
@@ -42,7 +42,7 @@ public class Day38 {
       if(c == null){
         System.out.println("MOHON PESANAN ANDA BELUM ADA");
       } else{
-      System.out.println("Masukkan uang anda:");
+      System.out.print("Masukkan uang anda:");
       int b = input.nextInt();
       total = b - hrga;
 
