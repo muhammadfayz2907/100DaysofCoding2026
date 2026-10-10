@@ -1,11 +1,11 @@
 import java.util.Scanner;
 public class Day39 {
     public static void main(String[] args) {
-Scanner in = new Scanner(System.in);
+Scanner input = new Scanner(System.in);
 
-    int a = in.nextInt();
-    int b = in.nextInt();
-    char c = in.next().charAt(0);
+    int a = input.nextInt();
+    int b = input.nextInt();
+    char c = input.next().charAt(0);
     
 
 if (c == 'A') {
