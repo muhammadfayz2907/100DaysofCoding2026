@@ -1,40 +1,61 @@
 
-public class Gabungan {
 
-    public static int prosesAngka(int target) {
+import java.util.Scanner;
 
-        for (int i = 1; i <= 20; i++) {
+public class Day55 {
+    public static void main(String[] args) {
+     
+        Scanner input = new Scanner(System.in);
 
-            if (i == 3) {
-                continue;
-            }
+        System.out.print("Masukkan angka: ");
+        int a = input.nextInt();
 
-            if (i == 4){
-                continue;
-            }
+        System.out.println("\nCONTINUE");
+        Continue(a);
 
-            if (i == target) {
-                return i;
-            }
+        System.out.println("\nBREAK");
+        Break(a);
 
-            if (i == 19 ) {
-                break;
-            }
+        System.out.println("\nRETURN");
+        Return(a);
 
-            System.out.println("Memeriksa: " + i);
-        }
-
-        return -1;
+        System.out.println("Program Selesai");
+        input.close();
     }
 
-    public static void Day55(String[] args) {
-
-        int hasil = prosesAngka(10);
-
-        if (hasil != -1) {
-            System.out.println("Ditemukan: " + hasil);
-        } else {
-            System.out.println("Tidak ditemukan");
+    static void Continue(int a) {
+        for (int b = 1; b <= a; b++) {
+            if (b == 2) {
+                continue;
+            }
+            if (b == 4){
+              continue;
+            }
+            if (b == 6){
+              continue;
+            }
+            
+            System.out.print(b + " ");
         }
+    }
+
+    static void Break(int a) {
+        for (int b = 1; b <= a; b++) {
+            if (b == 10) {
+                break;
+            }
+            System.out.print(b + " ");
+        }
+    }
+
+    static void Return(int a) {
+        for (int b = 1; b <= 5; b++) {
+            if (b == 6) {
+                return;
+            }
+            System.out.print(b + " ");
+            System.out.println();
+        }
+        System.out.println("Tidak dapat di lanjutkan.");
     }
 }
