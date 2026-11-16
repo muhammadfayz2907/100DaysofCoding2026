@@ -5,7 +5,7 @@ public class Day76 {
          String hasilreplace = hasilTrim.replace("Jawa", "Sulawesi");
          String hasilsubstring = hasilreplace.substring(0, 8);
 
-         System.out.println("Teks awal: [" + teks + "]\nSetelah trim: [" + teks + "]\nSetelah replace: " + hasilreplace + "\nSetelah substring: " + hasilsubstring);
+         System.out.println("Teks awal: [" + teks + "]\nSetelah trim: [" + hasilTrim + "]\nSetelah replace: " + hasilreplace + "\nSetelah substring: " + hasilsubstring);
          
      }
 }
