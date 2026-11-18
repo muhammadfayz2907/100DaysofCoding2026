@@ -62,6 +62,9 @@ public class Day78 {
                 
             }
         }
+            default:
+                System.out.println("Opsi yang anda pilih tidak ada");
+                break;
         }
     }
 }
