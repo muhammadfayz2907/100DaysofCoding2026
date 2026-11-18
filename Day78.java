@@ -16,7 +16,7 @@ public class Day78 {
         String pwterdaftar = input.next();
 
         System.out.println("\nAkun berhasil dibuat! Silakan login.\n");
-        System.out.println("=== LOGIN KE AKUN FACEBOOK ===");
+        System.out.println("=== LOGIN KE AKUN GOOGLE ===");
         boolean statuslogin = false;
 
         while (!statuslogin) {
